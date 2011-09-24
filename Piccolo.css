@@ -112,7 +112,8 @@ php balanced
 }
 
 /* Off-white */
-string 
+string
 { 
 	color: rgba(164, 194, 97, 1);
+	background-color: rgba(4, 252, 0, 0.04);
 } 
