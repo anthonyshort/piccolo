@@ -1,1 +1,118 @@
-/Users/anthonyshort/Library/Application Support/Espresso/Themes/Piccolo.css
+/*
+	@theme Cappuccino
+	@override-placeholders ruby, css, html, php, sass
+  	@author Anthony Short - Based on the Railcasts theme
+  	
+  	Colors
+  		- #ddd text
+  		- #222 background
+  		- #555 Dark grey (Comments)
+  		- rgba(251, 199, 111, 1.00) Yellow
+  		- rgba(112, 155, 190, 1.00) Blue
+  		- rgba(164, 194, 97, 1.00) Red
+*/
+
+@base 
+{
+	color: #ffffff;
+	background-color: #293d40;
+	insertion-point-color: #fff;
+	selection-background-color: #141d1e;
+}
+
+tag, 
+source, 
+sourcecode,
+css,
+js,
+ruby
+{ spell-check: disabled; }
+
+processing-instruction { color:#aeaeae; }
+
+/* Purple */
+ruby colon + variable,
+ruby colon,
+ruby variable.instance,
+symbol name,
+js variable.built-in,
+js keyword.variable,
+css variable-name
+{
+	color: #c891f4;
+}
+
+/* White */
+variable,
+js variable assignment {
+	color: #fff;
+}
+
+/* Yellow */
+selector,
+php builtin_function name,
+variable.function{
+	color: rgb(255, 255, 255);
+}
+
+/* Blue */
+property-name,
+tag,
+ruby variable.property,
+js variable.property,
+ruby period,
+js brace + period,
+js variable.function { 
+	color: rgb(98, 184, 252);
+	text-decoration: none;
+}
+
+js variable,
+js variable.function.method,
+js variable.built-in,
+ruby variable,
+at-rule property-name,
+at-rule property-value,
+css variable-value,
+js variable + period, {
+	color: #2bdfd9;
+}
+
+/* Green */
+property-value,
+string
+{ color: rgb(15, 248, 130); }
+
+/* Red */
+php php.begin *,
+php keyword.modifier,
+delimiter.source
+{ color: rgb(243, 101, 101); }
+
+/* Orange */
+keyword.important,
+control,
+js function keyword,
+js keyword.storage,
+js variable.class,
+css keyword.default
+{ color: rgb(246, 193, 77); }
+
+/* Grey */
+comment,
+tag.doctype
+{ 
+	color: #39686f; 
+}
+
+/* Light Grey */
+php balanced
+{ 
+	color: #504d4d;
+}
+
+/* Off-white */
+string 
+{ 
+	color: rgba(164, 194, 97, 1);
+} 
