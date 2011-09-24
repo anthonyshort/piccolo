@@ -37,7 +37,8 @@ ruby variable.instance,
 symbol name,
 js variable.built-in,
 js keyword.variable,
-css variable-name
+css variable-name,
+selector
 {
 	color: #c891f4;
 }
